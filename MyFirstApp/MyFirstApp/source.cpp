@@ -1,20 +1,14 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-void printRoad(int x)
+bool isPositive(double x)
 {
-	for (size_t i = 0; i < x; i++)
-	{
-		cout << "*   *" << endl;
-		cout << "* | *" << endl;
-		cout << "* | *" << endl;
-		cout << "*   *" << endl;
-	}
+	return x > 0;
 }
 int main()
 {
 	cout << "프로그램 시작!" << endl;
-	printRoad(7);
+	cout << boolalpha << isPositive(2.3) << endl;
 	cout << "프로그램 끝" << endl;
 	return 0;
 }
