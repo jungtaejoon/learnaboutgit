@@ -30,4 +30,9 @@ int main()
 		break;
 	}
 	cout << "switch 문의 끝입니다." << endl;
+
+	cout << "Fish = " << Fish << endl;
+	cout << "Bread = " << Bread << endl;
+	cout << "Apple = " << Apple << endl;
+	cout << "Orange = " << Orange << endl;
 }
