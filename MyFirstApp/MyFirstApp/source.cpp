@@ -1,10 +1,20 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-
+void printRoad(int x)
+{
+	for (size_t i = 0; i < x; i++)
+	{
+		cout << "*   *" << endl;
+		cout << "* | *" << endl;
+		cout << "* | *" << endl;
+		cout << "*   *" << endl;
+	}
+}
 int main()
 {
-	for (int i = 1; i <= 16; i++)
-	{
-		cout << i << "\t" << i * i << endl;
-	}
+	cout << "프로그램 시작!" << endl;
+	printRoad(7);
+	cout << "프로그램 끝" << endl;
+	return 0;
 }
