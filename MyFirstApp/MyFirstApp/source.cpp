@@ -2,7 +2,7 @@
 using namespace std;
 enum Mount
 {
-	Horse,
+	Horse = 1,
 	Mare,
 	Mule,
 	Sheep,
@@ -11,7 +11,9 @@ enum Mount
 
 int main()
 {
-	Mount mount = Horse;
+	int mount;
+	cout << "1~5번 탈것을 선택해주세요." << endl;
+	cin >> mount;
 	switch (mount)
 	{
 	case Horse:
@@ -30,6 +32,7 @@ int main()
 		cout << "초코보!" << endl;
 		break;
 	default:
+		cout << "Invalid mount" << endl;
 		break;
 	}
 }
