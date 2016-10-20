@@ -1,14 +1,21 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-bool isPositive(double x)
+bool absEqual(int a, int b)
 {
-	return x > 0;
+	if (a < 0)
+	{
+		a = -a;
+	}
+	if (b < 0)
+	{
+		b = -b;
+	}
+	return a == b;
 }
 int main()
 {
 	cout << "프로그램 시작!" << endl;
-	cout << boolalpha << isPositive(2.3) << endl;
+	cout << boolalpha << absEqual(2, -3) << endl;
 	cout << "프로그램 끝" << endl;
 	return 0;
 }
