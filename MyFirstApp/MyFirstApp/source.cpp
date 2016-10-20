@@ -1,21 +1,14 @@
 #include <iostream>
 using namespace std;
-bool absEqual(int a, int b)
+char getGrade(int x)
 {
-	if (a < 0)
-	{
-		a = -a;
-	}
-	if (b < 0)
-	{
-		b = -b;
-	}
-	return a == b;
+	if (x >= 80) return 'A';
+	else if (x >= 70) return 'B';
+	else if (x >= 60) return 'C';
+	else if (x >= 50) return 'D';
+	else return 'F';
 }
 int main()
 {
-	cout << "프로그램 시작!" << endl;
-	cout << boolalpha << absEqual(2, -3) << endl;
-	cout << "프로그램 끝" << endl;
-	return 0;
+	cout << getGrade(78) << endl;
 }
