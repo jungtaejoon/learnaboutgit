@@ -29,4 +29,5 @@ int main()
 		cout << "음식이 없습니다." << endl;
 		break;
 	}
+	cout << "switch 문의 끝입니다." << endl;
 }
