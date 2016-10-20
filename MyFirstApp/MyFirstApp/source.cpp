@@ -1,38 +1,35 @@
 #include <iostream>
 using namespace std;
-enum Food
+enum Mount
 {
-	Fish,
-	Bread,
-	Apple,
-	Orange
+	Horse,
+	Mare,
+	Mule,
+	Sheep,
+	Chocobo
 };
 
 int main()
 {
-	Food food = Bread;
-	switch (food)
+	Mount mount = Horse;
+	switch (mount)
 	{
-	case Fish:
-		cout << "여기 맛있는 물고기가 있습니다." << endl;
+	case Horse:
+		cout << "이 말은 용맹스럽고 강합니다." << endl;
 		break;
-	case Bread:
-		cout << "냠냠! 빵이 맛좋군요." << endl;
+	case Mare:
+		cout << "이 암말은 하얀 색이고 예쁩니다." << endl;
 		break;
-	case Apple:
-		cout << "음. 과일은 좋습니다." << endl;
+	case Mule:
+		cout << "당신은 노새를 타게 되었습니다. 당신은 이에 분노합니다." << endl;
 		break;
-	case Orange:
-		cout << "오렌지 당신은 제가 바나나라고 말 안 해서 기쁘겠죠." << endl;
+	case Sheep:
+		cout << "메에! 양은 당신이 타고 다니기 조금 힘들어 보입니다." << endl;
+		break;
+	case Chocobo:
+		cout << "초코보!" << endl;
 		break;
 	default:
-		cout << "음식이 없습니다." << endl;
 		break;
 	}
-	cout << "switch 문의 끝입니다." << endl;
-
-	cout << "Fish = " << Fish << endl;
-	cout << "Bread = " << Bread << endl;
-	cout << "Apple = " << Apple << endl;
-	cout << "Orange = " << Orange << endl;
 }
