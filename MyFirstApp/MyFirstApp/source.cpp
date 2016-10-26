@@ -2,17 +2,14 @@
 #include <string>
 using namespace std;
 
-string g_string;
-
-void addA() { g_string += "A"; }
-void addB() { g_string += "B"; }
-void addC() { g_string += "C"; }
+void testFunc()
+{
+	static int runCount = 0;
+	cout << "이 함수를 " << ++runCount << "번 실행했습니다." << endl;
+}
 
 int main()
 {
-	addA();
-	addB();
-	cout << g_string << endl;
-	addC();
-	cout << g_string << endl;
+	testFunc();
+	testFunc();
 }
