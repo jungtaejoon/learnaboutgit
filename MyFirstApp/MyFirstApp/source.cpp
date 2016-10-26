@@ -1,10 +1,18 @@
 #include <iostream>
+#include <string>
 using namespace std;
-double f(double x)
-{
-	return 3 * x + 4;
-}
+
+string g_string;
+
+void addA() { g_string += "A"; }
+void addB() { g_string += "B"; }
+void addC() { g_string += "C"; }
+
 int main()
 {
-	cout << f(23.4) << endl;
+	addA();
+	addB();
+	cout << g_string << endl;
+	addC();
+	cout << g_string << endl;
 }
